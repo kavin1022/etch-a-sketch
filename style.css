@@ -1,5 +1,32 @@
-#grid-container{
+.buttonStyle{
+    background-color: #805acb;
+    color: #fff;
+    border-style: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 3px;
+    text-align: center;
+    margin-bottom: 30px;
+}
 
+#grid-container{
+    width: 480px;
+    height: 480px;
+}
+
+.buttonStyle:hover{
+    cursor: pointer;
+}
+
+html{
+    background-color: #F5F5F6;
+}
+
+#center{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items:center;
 }
 
 .inner-container{
@@ -18,8 +45,4 @@
     height: 30px;
     margin: 0;
     padding: 0;
-}
-
-.col:hover {
-    background-color: aqua;
 }
