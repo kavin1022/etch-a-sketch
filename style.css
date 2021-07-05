@@ -1,4 +1,5 @@
 #grid-container{
+
 }
 
 .inner-container{
@@ -19,6 +20,6 @@
     padding: 0;
 }
 
-.col:hover{
+.col:hover {
     background-color: aqua;
 }

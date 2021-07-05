@@ -15,8 +15,34 @@ function createGrid(){
     }
 }
 
+function changeColour(){
+    const square = document.getElementsByClassName("col");
+    for (var i = 0; i < square.length; i++) {
+        square[i].addEventListener('mouseenter', function(event){
+            event.target.style.backgroundColor = "black"
+        });
+    }
+
+    for (var i = 0; i < square.length; i++) {
+        square[i].addEventListener('mouseenter', function(event){
+            event.target.style.backgroundColor = "blue"
+        });
+    }
+}
+
+function clearGrid(){
+    const button = document.getElementById("clearButton");
+    button.addEventListener("click", function(){
+        const grid = document.getElementsByClassName("col");
+        for (var i = 0; i<grid.length; i++){
+            grid[i].style.backgroundColor = "white"
+        }
+    });
+}
+
 function main(){
-    createGrid()
+    createGrid();
+    changeColour();
+    clearGrid();
 }
 main()
-
